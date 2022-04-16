@@ -17,7 +17,7 @@
        And Run Test Again Untill it Work
   ## What You Need To Test in Android Application ?
     1- Any Logic Code like ( validation code - mathematical code - Repository Classes)
-    2- Android Component like (Viewmodel - Room - Dao)
+    2- Android Component like (Viewmodel - Room - Dao - Retrofit - Hilt)
     3- Test View Of Your App
       
     
