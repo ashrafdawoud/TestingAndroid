@@ -15,7 +15,10 @@
     2- Implement Function Code To Test It 
     3- Run Test Code if it Successed Move to Another Test and if it Faild Try To Solve Test Code Or Function 
        And Run Test Again Untill it Work
-  
+  ## What You Need To Test in Android Application ?
+    1- Any Logic Code like ( validation code - mathematical code - Repository Classes)
+    2- Android Component like (Viewmodel - Room - Dao)
+    3- Test View Of Your App
       
     
 
