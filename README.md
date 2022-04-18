@@ -1,12 +1,12 @@
 # Android Testing
   ## What are the  3 types of tests in Android Testing ?
-  #### 1- Unit Test
+  #### 1- Unit Test (@Small Test)
     - It is a Test Which Handel small Pices of Code like functions and classes of your business logic
     - Recommended technologies: Junit + Mokito
-  #### 2- Integration Test
+  #### 2- Integration Test (@Medium Test)
      - Tests how two components of our App works together like (Viewmodel & Fragments)
      - Recommended technologies: Espresso
-  #### 3- End To End Test
+  #### 3- End To End Test (@Large Test)
      - Test That Check If All Component of Your Application Work Well Together
   ## Test Driven Development `TDD`
       - Means That We Write Test Cases Before We Implement Function Code (use only with UNIT TEST)
