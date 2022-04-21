@@ -2,19 +2,20 @@ package com.androiddevs.shoppinglisttestingyt.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface ShoppingDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertShoppingItem(shoppingItem: ShoppingItem)
+    suspend fun insertShoppingItem(shoppingItem: ShoppingItem) :Long
 
     @Delete
     suspend fun deleteShoppingItem(shoppingItem: ShoppingItem)
 
     @Query("SELECT * FROM shopping_items")
-    fun observeAllShoppingItems(): LiveData<List<ShoppingItem>>
+    suspend fun observeAllShoppingItems(): List<ShoppingItem>
 
     @Query("SELECT SUM(price * amount) FROM shopping_items")
-    fun observeTotalPrice(): LiveData<Float>
+    suspend fun observeTotalPrice(): Float
 }
